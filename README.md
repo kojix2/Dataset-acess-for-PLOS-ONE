@@ -1,7 +1,9 @@
 # Dataset-acess-for-PLOS-ONE
 
-## Original work and repository
+## Original Datasets
 Data set for the paper submitted to PLOS One, which is entitled "Real-time Gastric Polyp Detection using Convolutional Neural Networks".
+
+Citation: Zhang X, Chen F, Yu T, An J, Huang Z, Liu J, et al. (2019) Real-time gastric polyp detection using convolutional neural networks. PLoS ONE 14(3): e0214133. https://doi.org/10.1371/journal.pone.0214133
 
 https://github.com/jiquan/Dataset-acess-for-PLOS-ONE
 
@@ -153,3 +155,11 @@ model_data/yolov3.onnx
 4. View the yolov3 network with netron. (optional)
 
 ![Netron](https://raw.githubusercontent.com/kojix2/Dataset-acess-for-PLOS-ONE/master/screenshots/screenshot3.png)
+
+
+## License
+There is no clear copyright notice for images. However, from the following description, it is assumed that a model may be created using this dataset of endoscopic images. 
+Please follow the laws of your area. 
+
+> Copyright: © 2019 Zhang et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+> Data Availability: All the trainval images are available on https://github.com/jiquan/Dataset-acess-for-PLOS-ONE. And this information will only be available after paper acceptance.
