@@ -1,14 +1,14 @@
 # Dataset-acess-for-PLOS-ONE
 
-## Original Datasets
-Data set for the paper submitted to PLOS One, which is entitled "Real-time Gastric Polyp Detection using Convolutional Neural Networks".
+Create your polyp detection AI with open dataset. 
+
+## Original work and datasets
+
+:two_hearts: Original paper
 
 Citation: Zhang X, Chen F, Yu T, An J, Huang Z, Liu J, et al. (2019) Real-time gastric polyp detection using convolutional neural networks. PLoS ONE 14(3): e0214133. https://doi.org/10.1371/journal.pone.0214133
 
 https://github.com/jiquan/Dataset-acess-for-PLOS-ONE
-
-
-## This repository is kojix2's fork for creating yolov3 model
 
 ## Requirements
 
@@ -36,7 +36,7 @@ The resized images have been already added to the repository. So you do not need
 sh resize_image.sh
 ```
 
-2. Create Annotation file for Yolov3
+2. Create annotation file for Yolov3.
 
 ```ruby
 ruby convert_annotation.rb > train_polyp.txt
@@ -62,7 +62,7 @@ mv ../Dataset-acess-for-PLOS-ONE/polyp_classes.txt model_data/polyp_classes.txt
 mv ../Dataset-acess-for-PLOS-ONE/train_polyp.txt .
 ```
 
-4. Copy `train.py` to `train_polyp.py`
+4. Copy `train.py` to `train_polyp.py`.
 
 ```sh
 cp train.py train_polyp.py
@@ -88,7 +88,7 @@ There are two places where `batch_size` is defined, but the latter is important 
 +     batch_size = 8   # note that more GPU memory is required after unfreezing the body
 ```
 
-5. Edit `yolo.py`
+5. Edit `yolo.py`.
 
 ```diff
 # line 23
@@ -142,15 +142,17 @@ check [README.md ](https://github.com/onnx/keras-onnx/tree/master/applications/y
 
 3. Convert the model to onnx format.
 
-This command requires an image path as an argument
+This command requires an image path as an argument.
 
 ```sh
 python yolov3.py ../Dataset-acess-for-PLOS-ONE/TrainImages/100150_20150104001030003.jpg
 ```
 
-The onnx model is stored in the `model_data` directory
+The onnx model is stored in the `model_data` directory.
 
+```
 model_data/yolov3.onnx
+```
 
 4. View the yolov3 network with netron. (optional)
 
