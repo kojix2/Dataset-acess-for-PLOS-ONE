@@ -1,10 +1,8 @@
-# Dataset-acess-for-PLOS-ONE
-
-Create your polyp detection AI with open dataset. 
+# Create gastric polyps detection model with Zhejiang University gastric endoscopy datasets
 
 ## Original work and datasets
 
-:two_hearts: Original paper
+:cake: Original paper
 
 Citation: Zhang X, Chen F, Yu T, An J, Huang Z, Liu J, et al. (2019) Real-time gastric polyp detection using convolutional neural networks. PLoS ONE 14(3): e0214133. https://doi.org/10.1371/journal.pone.0214133
 
@@ -160,7 +158,10 @@ model_data/yolov3.onnx
 
 
 ## License
-There is no clear copyright notice for images. However, from the following description, it is assumed that a model may be created using this dataset of endoscopic images. 
+
+:two_hearts: Thanks to Zhejiang University patients and researchers for great datasets! 
+
+From the following description, it is assumed that a model may be created using this dataset of endoscopic images. 
 Please follow the laws of your area. 
 
 > Copyright: © 2019 Zhang et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
