@@ -14,6 +14,7 @@ Install tensorflow and keras. Use keras2onnx to convert the model to onnx format
 
 * [keras-yolo3](https://github.com/qqwweee/keras-yolo3)
 * [keras2onnx](https://github.com/onnx/keras-onnx)
+* [Netron](https://github.com/lutzroeder/netron) (optional)
 
 Download repos.
 
@@ -148,3 +149,7 @@ python yolov3.py ../Dataset-acess-for-PLOS-ONE/TrainImages/100150_20150104001030
 The onnx model is stored in the `model_data` directory
 
 model_data/yolov3.onnx
+
+4. View the yolov3 network with netron. (optional)
+
+![Netron](https://raw.githubusercontent.com/kojix2/Dataset-acess-for-PLOS-ONE/master/screenshots/screenshot3.png)
