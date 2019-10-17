@@ -1,10 +1,12 @@
 # Dataset-acess-for-PLOS-ONE
+
+## Original work and repository
 Data set for the paper submitted to PLOS One, which is entitled "Real-time Gastric Polyp Detection using Convolutional Neural Networks".
 
 https://github.com/jiquan/Dataset-acess-for-PLOS-ONE
 
 
-# This is kojix2 fork for creating yolov3 model
+## This repository is kojix2's fork for creating yolov3 model
 
 ## Requirements
 
@@ -100,3 +102,49 @@ There are two places where `batch_size` is defined, but the latter is important 
 python train_polyp.py
 ```
 
+It takes about an hour with GTX 1070.
+
+## 4. Verify that the model is generated correctly
+
+```sh
+python yolo_video.py --image
+# Input image filename: ../Dataset-acess-for-PLOS-ONE/TrainImages/100150_20150104001030003.jpg
+```
+
+![gastric polyp detection](https://raw.githubusercontent.com/kojix2/Dataset-acess-for-PLOS-ONE/master/screenshots/screenshot1.png)
+
+Did it work well? If it does not work, check for error messages during train.
+
+## 5. Convert the model to onnx format
+
+1. Copy keras-onnx yolov3.py to current directory.
+
+```sh
+cp ../keras-onnx/applications/yolov3/yolov3.py onnx_yolov3.py
+```
+
+check [README.md ](https://github.com/onnx/keras-onnx/tree/master/applications/yolov3) for usage. 
+
+2. Edit `onnx_yolov3.py` as follows
+
+```diff
+# line 134
+-        self.model_path = 'model_data/yolo.h5'  # model path or trained weights path
+-        self.anchors_path = 'model_data/yolo_anchors.txt'
+-        self.classes_path = 'model_data/coco_classes.txt'
++        self.model_path = 'logs/000/trained_weights_final.h5'  # model path or trained weights path
++        self.anchors_path = 'model_data/yolo_anchors.txt'
++        self.classes_path = 'model_data/polyp_classes.txt'
+```
+
+3. Convert the model to onnx format.
+
+This command requires an image path as an argument
+
+```sh
+python yolov3.py ../Dataset-acess-for-PLOS-ONE/TrainImages/100150_20150104001030003.jpg
+```
+
+The onnx model is stored in the `model_data` directory
+
+model_data/yolov3.onnx
