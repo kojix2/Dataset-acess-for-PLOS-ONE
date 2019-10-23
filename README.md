@@ -1,8 +1,10 @@
 # Create gastric polyps detection model with Zhejiang University gastric endoscopy datasets
 
+This repository uses [Zhejiang University gastric endoscopy datasets](https://github.com/jiquan/Dataset-acess-for-PLOS-ONE) to identify polyps with [keras-yolo3](https://github.com/qqwweee/keras-yolo3).
+
 ![gastric polyp detection](https://raw.githubusercontent.com/kojix2/Dataset-acess-for-PLOS-ONE/master/screenshots/screenshot1.png)
 
-## Original work and datasets
+## Original datasets and work
 
 :cake: Original paper
 
