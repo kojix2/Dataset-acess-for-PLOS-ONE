@@ -1,5 +1,7 @@
 # Create gastric polyps detection model with Zhejiang University gastric endoscopy datasets
 
+![gastric polyp detection](https://raw.githubusercontent.com/kojix2/Dataset-acess-for-PLOS-ONE/master/screenshots/screenshot1.png)
+
 ## Original work and datasets
 
 :cake: Original paper
