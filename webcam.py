@@ -28,8 +28,8 @@ while True:
     frame = cv2.resize(frame, (width, height))
     boxes = get_polyp(frame)
     for box in boxes:
-        frame = cv2.rectangle(frame, (box[1], box[0]), (box[3], box[2]), (255, 0, 0))
-    frame = cv2.resize(frame, (512, 512))
+        frame = cv2.rectangle(frame, (box[1], box[0]), (box[3], box[2]), (0, 255, 0), 3)
+    frame = cv2.resize(frame, (700, 700))
     cv2.imshow('camera', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
