@@ -28,6 +28,11 @@ git clone https://github.com/qqwweee/keras-yolo3
 pip install git+https://github.com/onnx/keras-onnx
 ```
 
+## Download
+You can download the pretrained model here. 
+(No Data Augmentation for now)
+[yolov3.onnx](https://drive.google.com/file/d/1RwVKSFxNF0mpI5ZfHhysBqsFwpp-8QXM/view?usp=sharing)
+
 ## 1. Data Preparation
 
 1. Convert image size with ImageMagick. 416 x 416. 
